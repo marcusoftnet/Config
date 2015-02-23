@@ -1,0 +1,29 @@
+{
+  "name": "Config",
+  "version": "0.0.0",
+  "description": "A small demonstration site for my configuration handling",
+  "main": "app.js",
+  "scripts": {
+    "test": "./node_modules/mocha/bin/mocha --harmony-generators -u bdd -R spec",
+    "start": "node --harmony app.js prod",
+    "start": "node --harmony app.js staging",
+    "startLocal": "nodemon --harmony -e html --watch views app.js"
+  },
+  "keywords": [
+    "configuration",
+    "heroku"
+  ],
+  "author": "Marcus Hammarberg <marcusoft.net@gmail.com> (http://www.marcusoft.net/)",
+  "license": "MIT",
+  "devDependencies": {
+    "should": "~5.0.1",
+    "supertest": "~0.15.0",
+    "mocha": "~2.1.0"
+  },
+  "dependencies": {
+    "koa": "~0.18.0"
+  },
+  "engines" : {
+    "node" : "~0.11.16"
+  }
+}
